@@ -245,21 +245,25 @@ function editEntry(uuid){
 
 
 function deleteEntry(uuid){
-	$( "#"+uuid ).remove();
+
+	if(confirm("Are you sure you want to delete this entry?")){
+
+		$( "#"+uuid ).remove();
 	
-	var obj = getEntryFromId(uuid);
+		var obj = getEntryFromId(uuid);
 
-	for (var i = 0; i < contactList.length; i++) {
+		for (var i = 0; i < contactList.length; i++) {
 		
-		var obj = contactList[i];
+			var obj = contactList[i];
 		
-		if(uuid === obj.id){
-			contactList.splice(i, 1);
-			break;
+			if(uuid === obj.id){
+				contactList.splice(i, 1);
+				break;
+			}
 		}
-	}
 
-	fillTableWithEntries();	
+		fillTableWithEntries();	
+	}
 }
 
 
