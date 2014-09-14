@@ -1,0 +1,231 @@
+
+
+* 	{
+	font-family: helvetica;
+}
+
+
+#logo {
+	color: white;
+	position: fixed;
+	left: 1%;
+	top: 1%;
+	z-index: 1;
+}
+
+#header {
+    background-color: #1F69B3;
+    height: 6em;
+    width: 120%;
+    position: fixed;
+	left: 0%;
+	top: 0%;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#left {
+    background-color: #C4DAFF;
+    width: 14em;
+	top: 6em;
+	bottom: 6em;
+	left: 0%;
+	position: fixed;
+	z-index: -1;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.labelbutton {
+	
+	color: white;
+	font-size: 1.25em;
+	font-weight: bold;
+	background-color: #C4DAFF;
+	left: -2em;
+	width: 100%;
+	height: 2em;
+	float: left;
+	position: relative;
+	padding-left: 2em;
+	padding-bottom: 1em;
+}
+
+.labelbutton:hover {
+	cursor: default;
+	background-color: #DCE9FF;
+}
+
+
+
+#content {
+    background-color: white;
+	bottom: 6em;
+	overflow: scroll;
+	top: 6em;
+	left: 14em;
+	right: 0%;
+	position: fixed;
+	z-index: -2;
+}
+
+#ctable {
+	position: absolute;
+}
+
+.entryTable {
+	margin: 1em;
+	line-height: 0.15em;
+	
+	width: 22em;
+	height: 8em;
+	
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
+	border-right: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+		
+	  -webkit-transition: all 0.25s ease;
+     -moz-transition: all 0.25s ease;
+       -o-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+	
+}
+
+.entryTable:hover {
+	
+	-ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    transform: scale(1.1,1.1);
+	
+	-ms-transform: translate(2px,-2px); /* IE 9 */
+   	-webkit-transform: translate(2px,-2px); /* Chrome, Safari, Opera */
+    transform: translate(2px,-2px);
+	
+	-webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+	
+}
+
+.entryRow {
+	line-height: 0.1em;
+	text-align: left;
+}
+
+
+.icon {
+	width: 1.25em;
+	height: 1.25em;
+	float: right;
+	padding-left: 10em;
+}
+
+
+#footer {
+    background-color: #1F69B3;
+    height: 6em;
+    width: 120%;
+    position: fixed;
+	bottom: 0%;
+	left: -2%;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px -2px 5px rgba(0,0,0,0.2);
+}
+
+
+/* Left Menu Style */
+
+.menu-base {
+
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	line-height: 1.5;
+	margin: 50px auto;
+	width: 200px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	padding: 0px;
+}
+
+.menu-item {
+	background: #fff;
+	width: 200px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu-item h4 {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	
+	color: #1F69B3;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 7px 12px;
+	background: #1F69B3;
+	margin: 0px;
+
+	}
+
+
+.menu-item h4 a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	width: 200px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu-item ul {
+	background: #fff;
+	font-size: 13px;
+	line-height: 30px;
+	height: 0px; /*collapses the menu*/
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	
+	/*Animation*/
+  -webkit-transition: height 0.5s ease;
+     -moz-transition: height 0.5s ease;
+       -o-transition: height 0.5s ease;
+      -ms-transition: height 0.5s ease;
+          transition: height 0.5s ease;
+}
+
+.menu-item ul a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #aaa;
+	display: block;
+	width: 200px;
+}
+
+.menu-item li {
+	border-bottom: 1px solid #eee;
+}
+
+.menu-item li:hover {
+	background: #eee;
+}
+
+.menu-item:hover ul {
+	height: 93px;
+}
+
+#single:hover ul{
+	height: 31px;
+}
+
